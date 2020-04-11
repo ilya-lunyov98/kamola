@@ -1,0 +1,120 @@
+@import "global";
+@import 'fonts';
+@import 'vars';
+
+.fullscreen {
+  position: relative;
+  &__inner{
+    background-image:url('../images/bg-fullscreen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+  &__wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(200,73,47,0.8);
+    width: 100%;
+    
+  } 
+  &__body {
+    text-align: center;
+    width: 935px;
+  }
+  &__title {
+    @include f400;
+    font-size: 50px;
+    line-height: 64px;
+    color: #fff;
+  }
+  &__text {
+    @include f400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    // width: 570px;
+    margin: 40px auto;
+  }
+  &__button {
+    @include f400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    width: 185px;
+    height: 53px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: all .3s;
+    &:hover{
+      background-color: #fff;
+      color: #1f2c33;
+      transition: all .3s;
+    }
+    }
+}
+//fs end
+
+
+//menu
+
+.menu {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0px;
+  }
+  &__list {
+    ul{
+      padding-left: 0px;
+      display: flex;
+    }
+      li{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      &+li{
+        margin-left: 30px;
+      }
+      a{
+        text-transform: uppercase;
+        display: flex;
+        @include f400;
+        text-decoration: none;
+        color: $black;
+        &:hover{
+          color:#ed4f2e;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+  .bg{
+    height: 33px;
+    width: 74px;
+    background-color: #ed4f2e;
+    align-items: center;  
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+    &:hover{
+     color: #fff;
+    }
+  }
+}
+
+
+//menu end
