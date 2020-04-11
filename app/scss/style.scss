@@ -1,6 +1,7 @@
 @import "global";
 @import 'fonts';
 @import 'vars';
+@import 'icomoon';
 
 .fullscreen {
   position: relative;
@@ -110,11 +111,102 @@
     justify-content: center;
     color: #fff;
     border-radius: 10px;
+    position: relative;
     &:hover{
      color: #fff;
+
     }
   }
 }
 
-
 //menu end
+
+
+//services
+
+.services {
+  margin-bottom: 55px;
+  &__wrapper{
+    max-width: 1329px;
+    border-radius: 30px 30px 0 0;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+  &__head{
+    width: 535px;
+    padding-top: 90px;
+    margin: 0 auto;
+  
+  }
+  &__inner{
+    padding: 160px 55px 130px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__offers {
+    padding: 0px 25px;
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6){
+      margin-top: 90px;
+    }
+    flex-basis: calc(33.333%);
+  }
+}
+
+.block-title{
+  text-align: center;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 35%;
+    background-image: url('../images/arrow.png');
+    width: 158px;
+    height: 12px;
+  }
+  &__title{
+color: #ed4f2e;
+font-size: 35px;
+font-weight: 400;
+line-height: 64px;
+text-transform: uppercase;
+  }
+  &__text{
+    font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+color: #1f2c33;
+  }
+}
+
+.offer-item {
+  text-align: center;
+  >span{
+    transition: all.2s;
+  }
+  >span:hover{
+      color: #ed4f2e;
+      transition: all.2s;
+      cursor: pointer;
+     }
+  &__icon { 
+    font-size: 50px;
+  }
+  &__title {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 64px;
+  }
+  &__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #4f4f4f;
+  }
+}
+
+
+
+//services end
