@@ -124,19 +124,18 @@
 
 //services
 
+.wrapper{
+  max-width: 1329px;
+  border-radius: 30px 30px 0 0;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
 .services {
   margin-bottom: 55px;
-  &__wrapper{
-    max-width: 1329px;
-    border-radius: 30px 30px 0 0;
-    background-color: #ffffff;
-    margin: 0 auto;
-  }
   &__head{
     width: 535px;
     padding-top: 90px;
     margin: 0 auto;
-  
   }
   &__inner{
     padding: 160px 55px 130px;
@@ -210,3 +209,112 @@ color: #1f2c33;
 
 
 //services end
+
+
+//video
+.vjs-poster{
+  background-size: cover;
+  background-position: center;
+}
+.video-js{
+  outline: none;
+  height: 587px;
+}
+.video-js .vjs-big-play-button{
+  top: 50%;
+  left: 50%;
+  width: 86px;
+  height: 87px;
+  border-radius: 50%;
+  border: 9px solid #fff;
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before{
+    top: -18px;
+    left: 0;outline: none;
+}
+.video-js .vjs-big-play-button {
+  font-size: 7em;outline: none;
+}
+
+//video end
+
+//price
+.wrapper--revers{
+  margin-top: 57px;
+  border-radius: 0 0 30px 30px ;
+}
+.price {
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  text-align: center;
+  &__inner{
+    width: 535px;
+    margin-top: 90px;
+    padding-top: 35px;
+    padding-bottom: 55px;
+    &:hover{
+      padding-top: 55px;
+      padding-bottom: 80px;
+    }
+  }
+  &__wrapper {
+    padding: 0px 90px 90px 90px;
+  }
+  &_revers {
+  }
+  &__head {
+    width: 535px;
+    padding-top: 90px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.price-item {
+  border: 1px solid $gray;
+  width: 263px;
+  &__mode {
+    color: #1f2c33;
+    @include f700;
+    padding-bottom: 25px;
+  }
+  &__price {
+    padding: 30px 0 30px 0;
+    background-color: #ebebeb;
+    @include f500;
+    font-size: 45px;
+    span{
+      color: #1f2c33;
+      font-size: 24px;  
+    }
+  }
+  &__descr {
+    color: #4f4f4f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 31px;
+    padding: 55px 0 48px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  &__button {
+    a{
+      width: 121px;
+      height: 33px;
+      border-radius: 5px;
+      background-color: #ed4f2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+//price end
