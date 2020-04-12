@@ -247,16 +247,20 @@ color: #1f2c33;
   &__flex{
     display: flex;
     justify-content: space-between;
+    padding-top: 90px;
   }
   text-align: center;
   &__inner{
     width: 535px;
-    margin-top: 90px;
     padding-top: 35px;
     padding-bottom: 55px;
+    transition: all .3s;
     &:hover{
-      padding-top: 55px;
-      padding-bottom: 80px;
+      margin-top: -30px;
+      margin-bottom: -40px;
+      transition: all .3s;
+      cursor: pointer;
+
     }
   }
   &__wrapper {
@@ -276,6 +280,9 @@ color: #1f2c33;
 .price-item {
   border: 1px solid $gray;
   width: 263px;
+  &:hover{
+    border: 1px solid $orange;
+  }
   &__mode {
     color: #1f2c33;
     @include f700;
@@ -290,6 +297,9 @@ color: #1f2c33;
       color: #1f2c33;
       font-size: 24px;  
     }
+  }
+  .orange{
+    background-color: $orange;
   }
   &__descr {
     color: #4f4f4f;
