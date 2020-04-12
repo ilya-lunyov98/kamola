@@ -257,7 +257,7 @@ color: #1f2c33;
     transition: all .3s;
     &:hover{
       margin-top: -30px;
-      margin-bottom: -40px;
+      margin-bottom: -20px;
       transition: all .3s;
       cursor: pointer;
 
@@ -265,6 +265,7 @@ color: #1f2c33;
   }
   &__wrapper {
     padding: 0px 90px 90px 90px;
+    margin-bottom: 55px;
   }
   &_revers {
   }
@@ -289,6 +290,7 @@ color: #1f2c33;
     padding-bottom: 25px;
   }
   &__price {
+    transition: all .3s;
     padding: 30px 0 30px 0;
     background-color: #ebebeb;
     @include f500;
@@ -300,6 +302,7 @@ color: #1f2c33;
   }
   .orange{
     background-color: $orange;
+    transition: all .3s;
   }
   &__descr {
     color: #4f4f4f;
@@ -328,3 +331,66 @@ color: #1f2c33;
 
 
 //price end
+
+
+
+
+//get started
+
+.get-started {
+  &__wrapper {
+    background-image: url('../images/get-started-bg.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #fff;
+    padding-bottom: 40px;
+  }
+  &__text {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    @include f400;
+    color: #fff;
+    
+  }
+  &__button {
+    a{
+      border-radius: 10px;
+      border: 1px solid #fff;
+      text-decoration: none;
+      padding: 15px 40px 15px 15px;
+      color: #fff;
+      position: relative;
+      text-transform: uppercase;
+      display: block;
+      width: 170px;
+      margin: 0 auto;
+      transition: .3s;
+     &::after{
+       position: absolute;
+       content: '';
+       top: 45%;
+       right: 14%;
+      background-image: url('../images/icons/arrow-right.png');
+      width: 14px;
+      height: 8px;
+     }
+     &:hover{
+      transform: scale(.9);
+      transition: .3s;
+     }
+    }
+
+  }
+}
+
+//get started end
