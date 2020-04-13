@@ -221,7 +221,7 @@ color: #1f2c33;
   height: 587px;
 }
 .video-js .vjs-big-play-button{
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 86px;
   height: 87px;
@@ -544,9 +544,6 @@ color: #1f2c33;
   &__inner{
     padding: 170px 45px 95px 0px;
   }
-  &__items{
-    
-  }
   &__item{
     max-width: 445px;
     text-align: center;
@@ -605,3 +602,215 @@ color: #1f2c33;
 }
 
 //customers end
+
+//contacts
+
+.contacts {
+  &__wrapper {
+    padding: 0px 90px 90px 90px;
+    margin-bottom: 55px;
+    margin-top: 50px;
+  }
+  &__head {
+    width: 535px;
+    padding-top: 90px;
+    margin: 0 auto;
+  }
+  &__items {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    color: #1f2c33; 
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    display: block;
+    width: 556px;
+    height: 74px;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  &__textarea {
+    color: #1f2c33;
+    padding-top: 26px;
+    padding-left: 20px;
+    outline: none;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    width: 1150px;
+    height: 293px;    
+    resize: none;
+    margin-top: 30px;
+  }
+  &__button {
+    outline: none;
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ed4f2e;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s;
+    &:active{
+      transform: scale(.7);
+      transition: .3s;
+    }
+  }
+}
+
+//contacts end
+
+//footer
+
+.footer {
+  padding: 90px 0 0 0;
+  background-color: $black;
+  .footer__get-in-touch--padding{
+    padding-left: 20px;
+  }
+  .footer__about-us_unique{
+    padding-right: 30px;
+  }
+  &__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__about-us {
+    flex-basis: calc(25%);
+  }
+  &__title {
+    @include f700;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  &__logo {
+    padding-top: 35px;
+  }
+  &__text {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    @include f400;
+    letter-spacing: 0.28px;
+    color: #8a98a4;
+  }
+  &__get-in-touch {
+    flex-basis: calc(25%);
+    ul{
+      margin: 0px 0px;
+      padding-left: 0px;
+    li{
+      list-style: none;
+      color: #8a98a4;
+      span{
+        padding-right: 8px;
+      }
+      &+li{
+        padding-top:10px;
+      }
+      a{
+        color: #8a98a4;
+        text-decoration: none;
+      }
+    }
+  }
+  }
+  &__latest-works {
+    flex-basis: calc(25%);
+  }
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    max-width: 275px;
+  }
+  &__image {
+      flex-basis: calc(50%);
+      margin-top: 5px;
+  }
+  &__subscribe {
+    flex-basis: calc(25%);
+  }
+  &__form {
+    position: relative;
+    input{
+      outline: none;
+      padding-left: 10px;
+      color: #a3b1bf;
+      border-radius: 3px;
+      height: 40px;
+        width: 230px;
+      background-color: #414c52;
+      border: none;
+    }
+    button{
+      width: 100px;
+      height: 40px;
+      background-color: #ed4f2e;
+      border: none;
+      border-radius: 3px;
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      right: 1%;
+      padding: 0px 8px 0px 8px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+  &__social {
+  ul{
+    padding-top: 35px;
+    padding-left: 0px;
+    li{
+      display: inline-block;
+      list-style: none;
+      &+li{
+        margin-left: 10px;
+      }
+      a{
+       text-decoration: none;
+        span{
+        padding: 10px 15px;
+        color:#fff;
+        font-size: 20px;
+        display: block;
+        border: 1px solid #fff;
+        transition: .3s;
+        border-radius: 5px;
+        &:hover{
+          background-color: #414c52;
+          transition: .3s;
+        }
+        }
+      }
+    }
+  }
+  }
+  &__end {
+    text-align: center;
+
+  }
+  &__rights {
+    margin-top: 60px;
+    background-color: #283645;  
+    color: #fff;
+    font-size: 14px;
+    padding: 35px 0px;
+  }
+}
+
+
+//footer end

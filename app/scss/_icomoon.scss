@@ -25,6 +25,33 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-envelope-o:before {
+    content: "\f003";
+  }
+  .icon-map-marker:before {
+    content: "\f041";
+  }
+  .icon-phone1:before {
+    content: "\f095";
+  }
+  .icon-twitter:before {
+    content: "\f099";
+  }
+  .icon-facebook:before {
+    content: "\f09a";
+  }
+  .icon-facebook-f:before {
+    content: "\f09a";
+  }
+  .icon-linkedin:before {
+    content: "\f0e1";
+  }
+  .icon-dribbble:before {
+    content: "\f17d";
+  }
+  .icon-behance:before {
+    content: "\f1b4";
+  }
   .icon-heart:before {
     content: "\e900";
   }
