@@ -10,13 +10,13 @@ html {
   }
   html,
   body{
-    max-height: 100%;
+    min-height: 100%;
     background-color: $gray;
     @include f400;
     overflow-x: hidden;
   }
   .container{
     max-width: 1330px;
-    padding: 0px 15px;
+    padding: 0px 50px;
     margin: 0 auto;
   }
