@@ -70,7 +70,72 @@
 
 
 //menu
+.menu__burger {
+height: 30px;
+display: flex;
+align-items: center;
+display: none;
+&:hover{
+  cursor: pointer;
+}
+}
 
+.menu__line {
+  position: relative;
+  width: 35px;
+  height: 5px;
+  background-color: $orange;
+  border-radius: 3px;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 5px;    
+    background-color: $orange;
+    top: 10px;
+    right: 0;
+     transition:transform .3s,all .3s .3s;
+     border-radius: 3px;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: $orange;
+    top: -10px;
+    right: 0;
+     transition:transform .3s,all .3s .3s;
+     border-radius: 3px;
+  }
+}
+.active{
+  background-color: transparent;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 5px;    
+    background-color: $orange;
+    top: 0px;
+    right: 0;
+    transform: rotate(45deg);
+    transition:all .3s , transform .3s .3s;
+    border-radius: 3px;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: $orange;
+    top: 0px;
+    right: 0;
+    transform: rotate(-45deg);
+    transition: all .3s , transform .3s .3s;
+    border-radius: 3px;
+  }
+}
 .menu {
   &__inner {
     display: flex;
@@ -82,6 +147,7 @@
     ul{
       padding-left: 0px;
       display: flex;
+      margin: 0px;
     }
       li{
       list-style: none;
@@ -674,7 +740,7 @@ color: #1f2c33;
   padding: 90px 0 0 0;
   background-color: $black;
   .footer__get-in-touch--padding{
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .footer__about-us_unique{
     padding-right: 30px;
@@ -741,7 +807,8 @@ color: #1f2c33;
       margin-top: 5px;
   }
   &__subscribe {
-    flex-basis: calc(25%);
+    flex-basis: calc(25% - 10px);
+    margin-right: 10px;
   }
   &__form {
     position: relative;
@@ -778,7 +845,7 @@ color: #1f2c33;
       display: inline-block;
       list-style: none;
       &+li{
-        margin-left: 10px;
+        margin-left: 5px;
       }
       a{
        text-decoration: none;
@@ -814,3 +881,5 @@ color: #1f2c33;
 
 
 //footer end
+
+@import "media";

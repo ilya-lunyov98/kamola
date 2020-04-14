@@ -1,0 +1,100 @@
+@media(max-width:1140px){
+    .services__inner{
+        padding: 92px 20px 70px;
+    }
+    .services__head{
+        padding-top: 25px;
+    }
+}
+@media(max-width:930px){
+    .services__offers{
+        flex-basis: calc(50%);
+    }
+    .services__offers:nth-child(4),
+    .services__offers:nth-child(5),
+    .services__offers:nth-child(6){
+        margin-top: 60px;
+    }
+    .services__offers{
+        margin-top: 60px;
+    }
+    .services__inner{
+            padding-top: 50px;
+    }
+    .stiky{
+        position: relative;
+    }
+    .menu__fixed{
+        height: 50px;
+        width: 50px;
+        padding-left: 4.5px;
+        border-radius: 100px;
+        border: 3px solid #283645;
+        position: fixed;
+        top: 80px;
+        right: 10px;
+        z-index: 2;
+        transition: .2s;
+    }
+    .menu__burger{
+        display: flex;
+        z-index: 4;
+    }
+
+    .menu__list{
+        transform: translateX(101%);
+        transition: .3s;
+        position: absolute;
+        max-width: 320px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 1;
+        height: 100%;
+        background-color: #283645;
+        z-index: 3;
+        position: fixed;
+        ul{
+            flex-direction: column;
+            margin: 57px auto;
+            li{
+                margin-left: 0px;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                a{
+                    font-size: 30px;
+                    display: block;
+                    color: #fff;
+                    height: 100%;
+                    width: 100%;
+                    padding: 10px;
+                }
+                .bg{
+                    &:hover{
+                        color: $orange;
+                    }
+                    display: block;
+                    background:transparent;
+                    height: auto    ;
+                    width: auto ;
+                }
+            }
+        }
+    }
+    .slide{
+        display: flex;
+        transform: translate(0);
+        transition: .3s;
+        width: 100%;
+        z-index: 3;
+    }
+    .slide{
+        position: fixed;   
+    }
+    .active{
+        position: fixed;
+        top: 70px;
+        right: 10px;
+        z-index: 4;
+    }
+}

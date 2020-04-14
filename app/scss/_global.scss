@@ -13,6 +13,7 @@ html {
     max-height: 100%;
     background-color: $gray;
     @include f400;
+    overflow-x: hidden;
   }
   .container{
     max-width: 1330px;
